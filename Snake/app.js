@@ -90,6 +90,9 @@ function placeRandomApple() {
   const appleX = Math.floor(Math.random() * 12);
   const appleY = Math.floor(Math.random() * 12);
   gameState.apple = [appleX, appleY];
+  if (gameState.apple !== 'snake') {
+    placeRandomApple()
+  }
 }
 
 function addSnakeToBoard() {
