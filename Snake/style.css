@@ -1,0 +1,88 @@
+*{
+ background-color: black;
+}
+
+body {
+    display:grid;
+    justify-content: center;
+}
+
+h2{
+    color: limegreen;
+    font-size: 30px;
+    margin-bottom: .5rem;
+}
+
+.game-over {
+    color:red;
+    font-size: 20px;
+}
+
+p{
+    color:limegreen;
+    font-size: 20px;
+}
+
+#board {
+    display:grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 60vw;
+    height: 60vw;
+
+}
+
+.cell {
+    background-color: blueviolet;
+    border: .5px solid black;
+}
+
+.snake {
+    background-color: limegreen;
+}
+.start-easy {
+    font-size: 15px;
+    padding:.5rem;
+    width:6.5rem;
+    height:4rem;
+    background-color:black;
+    color:limegreen;  
+}
+
+.start-medium {
+    font-size: 15px;
+    padding:.5rem;
+    width:7rem;
+    height:4rem;
+    background-color:black;
+    color:limegreen;  
+}
+
+.start-hard {
+    font-size: 15px;
+    padding:.5rem;
+    width:6rem;
+    height:4rem;
+    background-color:black;
+    color:limegreen;  
+}
+.pause {
+    font-size: 15px;
+    padding:.5rem;
+    width:6rem;
+    height:4rem;
+    background-color:black;
+    color:red;
+   
+}
+
+button {
+    margin-bottom: .5rem;
+    background-color: black;
+    color:limegreen;
+    padding:.5rem;
+    width:6rem;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;   
+    
+}
